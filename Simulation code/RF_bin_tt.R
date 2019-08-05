@@ -5,22 +5,21 @@ args=(commandArgs(TRUE))
 
 ##args is now a list of character vectors
 ## First check to see if arguments are passed.
-## Then cycle through each element of the list and evaluate the expressions.
 if(length(args)==0){
   print("No arguments supplied.")
   ##supply default values
   
   seed <- 9999999
 
-  setwd("R://Lynch//multicollinearity//new sims")
-  resfolder<-"R://Lynch//multicollinearity//new sims//results"
+  setwd("/LocalDir")
+  resfolder<-"/LocalDir/results"
 }else{
   #for(i in 1:length(args)){
   #  eval(parse(text=args[[i]]))
   #}
   seed<-args[1]
-  setwd("/fccc/users/statlab/ehandorf/Lynch/multicollinearity")
-  resfolder<-"/fccc/users/statlab/ehandorf/Lynch/multicollinearity/results"
+  setwd("/RemoteDir")
+  resfolder<-"/RemoteDir/results"
 }
 
 ### R code
